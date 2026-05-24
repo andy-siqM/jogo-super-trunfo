@@ -6,7 +6,7 @@
 int main() {
     float nota1, nota2, nota3;
     float media_nota;
-    
+
     // solicitar dados ao usuário
     printf("\nVamos calcular a sua nota média no semestre!\n");
     printf("Informe a sua primeira nota: \n");
