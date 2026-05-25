@@ -107,10 +107,11 @@ int main(){
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
     printf("\nCartas cadastradas com sucesso!\n");
+    printf("\n");
 
     // Imprimir resultados das comparações entre as cartas
     printf("Comparação de Cartas:\n");
-    printf("1 para verdadeiro - Carta 1 vence - e 0 para falso - Carta 2 vence:\n");
+    printf("1 para verdadeiro - Carta 1 vence - e 0 para falso - Carta 2 vence\n");
     printf("População: Carta %s vence a Carta %s? %d\n", codigo_1, codigo_2, comparacao_populacao); 
     printf("Área: Carta %s vence a Carta %s? %d\n", codigo_1, codigo_2, comparacao_area);
     printf("PIB: Carta %s vence a Carta %s? %d\n", codigo_1, codigo_2, comparacao_pib);
@@ -118,6 +119,7 @@ int main(){
     printf("Densidade Populacional: Carta %s vence a Carta %s? %d\n", codigo_1, codigo_2, comparacao_densidade);
     printf("PIB per Capita: Carta %s vence a Carta %s? %d\n", codigo_1, codigo_2, comparacao_pib_per_capita);
     printf("Super Poder: Carta %s vence a Carta %s? %d\n", codigo_1, codigo_2, comparacao_super_poder);
+    printf("\nComparações realizadas com sucesso!\n");
     
     return 0; // encerrar programa
 }
