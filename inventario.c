@@ -31,9 +31,37 @@ int main(){
     // Exibir as informações dos produtos
     // Produto A
     printf("Produto: %s\n", produtoA);
-    printf("Quantidade em estoque: %u\n", quantidadeA);
-    printf("Valor unitário: R$ %.2f\n", valorA);
-    printf("Valor total em estoque: R$ %.2f\n", valor_totalA);
-    printf("Estoque mínimo: %u\n", estoque_minimoA);
+    printf("Quantidade em estoque: %u unidades\n", quantidadeA);
+    printf("Valor unitário: R$ %.2f reais\n", valorA);
+    printf("Valor total em estoque: R$ %.2f reais\n", valor_totalA);
+    printf("Estoque mínimo: %u unidades\n", estoque_minimoA);
     printf("\n");
+
+    // Produto B
+    printf("Produto: %s\n", produtoB);
+    printf("Quantidade em estoque: %u unidades\n", quantidadeB);
+    printf("Valor unitário: R$ %.2f reais\n", valorB);
+    printf("Valor total em estoque: R$ %.2f reais\n", valor_totalB);
+    printf("Estoque mínimo: %u unidades\n", estoque_minimoB);
+    printf("\n");
+
+    // Comparações com valores mínimos de estoque usando operadores relacionais
+    int resultadoA, resultadoB; // variáveis para armazenar os resultados das comparações entre o estoque atual e o estoque mínimo
+    resultadoA = (quantidadeA > estoque_minimoA); // comparação entre a quantidade atual de A e seu estoque mínimo
+    resultadoB = (quantidadeB > estoque_minimoB); // comparação entre a quantidade atual de B e seu estoque mínimo
+    
+    printf("Comparação com estoque mínimo:\n");
+    printf("O estoque do %s está acima do mínimo (%u)? %d\n", produtoA, estoque_minimoA, resultadoA);
+    printf("O estoque do %s está acima do mínimo (%u)? %d\n", produtoB, estoque_minimoB, resultadoB);
+
+    // Comparação entre os valores totais dos produtos usando operadores relacionais
+    int comparacao_valor_total; // variável para armazenar o resultado da comparação entre os valores totais dos produtos A e B
+    comparacao_valor_total = (valor_totalA > valor_totalB); // operação relacional
+    printf("\nComparação entre os valores totais dos produtos:\n");
+    printf("O valor total em estoque do %s é maior que o do %s? %d\n", produtoA, produtoB, comparacao_valor_total);
+     
+    printf("\nComparação entre os valores totais dos produtos (usando os cálculos dentro do printf):\n");
+    printf("O valor total em estoque de A é maior que o de B? %d\n", (valor_totalA > valor_totalB));
+    printf("O valor total em estoque de A (R$ %.2f) é maior que o valor de B (R$ %.2f)? %d\n", (quantidadeA * valorA), (quantidadeB * valorB), (quantidadeA * valorA > quantidadeB * valorB));
+    return 0;
 }
