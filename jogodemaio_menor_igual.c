@@ -33,22 +33,32 @@ int main()  {
 
     // Verificar o resultado da comparação
     switch (tipoComparacao) {
+        case 'M': // verificar se número do jogador é maior que o do computador
         case 'm': // verificar se número do jogador é maior que o do computador
             if (numJogador > numComputador) {
                 printf("O seu número é maior que o do computador!\n");
+                printf("Parabéns! Você venceu!\n");
             }
+            // operador ternario: numJogador > numComputador ? printf("O seu número é maior que o do computador!\n") : printf("O seu número não é maior que o do computador!\n");
             break;
+        case 'N': // verificar se número do jogador é menor que o do computador
         case 'n': // verificar se número do jogador é menor que o do computador
             if (numJogador < numComputador) {
                 printf("O seu número é menor que o do computador!\n");
+                printf("Parabéns! Você venceu!\n");
             }
+            // operador ternario: numJogador < numComputador ? printf("O seu número é menor que o do computador!\n") : printf("O seu número não é menor que o do computador!\n");
             break;
+        case 'I': // verificar se número do jogador é igual ao do computador
         case 'i': // verificar se número do jogador é igual ao do computador
             if (numJogador == numComputador) {
                 printf("O seu número é igual ao do computador!\n");
+                printf("Parabéns! Você venceu!\n");
             } else {
                 printf("O seu número não é igual ao do computador!\n");
+                printf("Que pena! Você perdeu!\n");
             }
+            // op ternario: numJogador == numComputador ? printf("O seu número é igual ao do computador!\n") : printf("O seu número não é igual ao do computador!\n");
             break;
         default:
             printf("Tipo de comparação inválido! Insira 'm' para maior, 'n' para menor ou 'i' para igual.\n");
